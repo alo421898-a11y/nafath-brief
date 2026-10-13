@@ -5,11 +5,17 @@ Track: Software
 A national digital login service must combine security, usability, and legal compliance across websites and mobile applications. Software standards such as OpenID Connect support reliable user authentication, while OAuth 2.0 enables delegated access to protected resources. Artificial intelligence can help identify suspicious login attempts, but its decisions must be tested for accuracy, bias, privacy risks, and security before deployment. Android runtime permissions limit access to sensitive device features and require user approval when applicable. DNS over HTTPS protects DNS queries from being read or modified in transit, although it does not secure the entire connection or hide all user activity. Phishing-resistant multi-factor authentication helps prevent attackers from stealing login credentials. Finally, Oman’s Personal Data Protection Law requires careful handling of citizens’ personal information. Together, these controls support a trustworthy and secure national login service.
 
 ## Software
+OAuth 2.0 is an authorization framework that allows applications to obtain limited access to protected resources. OpenID Connect builds on OAuth 2.0 and adds an identity layer that enables applications to verify a user’s identity and receive basic profile information. For the national login service, OpenID Connect is appropriate for user authentication, while OAuth 2.0 supports delegated access to government resources. Using the correct protocols helps separate identity verification from access permissions.
 
+Resource: OpenID Connect Core 1.0 - https://openid.net/specs/openid-connect-core-1_0.html
 ## AI
+The NIST AI Risk Management Framework identifies four functions: Govern, Map, Measure, and Manage. Before an AI model flags suspicious logins, the authority should identify threats, assess privacy and bias risks, test detection accuracy, and monitor false positives and false negatives. It should also define human oversight and accountability for decisions that affect citizens. Continuous monitoring is necessary because attackers and login patterns can change over time.
 
+Resource: NIST AI Risk Management Framework Core - https://airc.nist.gov/airmf-resources/airmf/5-sec-core/
 ## Mobile
+Android runtime permissions restrict access to sensitive features and data, such as location or the camera, when an app targets the relevant protected resources. The app should request a dangerous permission when the user starts a feature that needs it, rather than requesting every permission at launch. Users can deny or revoke permissions, so the login service should explain why access is needed and provide alternatives when possible. A login app should request only permissions essential to its functions.
 
+Resource: Request runtime permissions - Android Developers - https://developer.android.com/training/permissions/requesting
 ## Networking
 
 ## Cybersecurity
