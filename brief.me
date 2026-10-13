@@ -17,11 +17,17 @@ Android runtime permissions restrict access to sensitive features and data, such
 
 Resource: Request runtime permissions - Android Developers - https://developer.android.com/training/permissions/requesting
 ## Networking
+DNS over HTTPS (DoH) sends DNS queries and responses over an HTTPS connection, helping protect them from being read or modified by parties monitoring the network path. For the national login service, DoH can improve the privacy and integrity of domain lookups. However, it does not encrypt all website activity, hide the user’s IP address from every party, or protect against phishing and compromised devices. Other security controls remain necessary.
 
+Resource: RFC 8484 - DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484
 ## Cybersecurity
+Phishing-resistant authentication prevents an attacker from successfully reusing authentication data captured by a fake login page. FIDO2 passkeys and security keys can provide phishing-resistant authentication when correctly implemented because they bind authentication to the legitimate website’s origin. By contrast, SMS codes, email codes, and manually entered one-time passwords are not phishing-resistant. The authority should prefer origin-bound authenticators to protect citizens against credential theft and fraudulent login pages.
 
+Resource: NIST SP 800-63B - Authentication and Lifecycle Management - https://pages.nist.gov/800-63-4/sp800-63b/authenticators/
 ## Data
+Oman’s Personal Data Protection Law, issued by Royal Decree 6/2022, establishes requirements for processing personal data. The authority should verify the law’s scope and any applicable government-specific provisions, provide required privacy information, establish a lawful basis for processing, and apply appropriate security safeguards. It should also check the executive regulation for relevant consent, data-subject rights, retention, and breach-handling requirements. Collecting only necessary information and restricting access helps reduce privacy risks.
 
+Resource: Oman Ministry of Justice and Legal Affairs - Personal Data Protection Law, Royal Decree 6/2022 - https://mjla.gov.om/
 ## Misconception in My Track
 
 ## Open Question
